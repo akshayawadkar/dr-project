@@ -1,4 +1,4 @@
-package net.codejava;
+package org.awlabs.dr.project.model;
 
 import java.util.Collection;
 

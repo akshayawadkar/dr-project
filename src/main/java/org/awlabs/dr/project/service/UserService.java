@@ -1,7 +1,10 @@
-package net.codejava;
+package org.awlabs.dr.project.service;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.awlabs.dr.project.model.User;
+import org.awlabs.dr.project.repository.UserRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -10,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class UserService {
 
 
-    public static final Logger LOG = LoggerFactory.getLogger(UserService.class);
+    private static final Logger LOG = LogManager.getLogger("UserService");
 
 
     @Autowired

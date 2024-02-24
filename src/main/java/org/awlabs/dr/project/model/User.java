@@ -1,4 +1,4 @@
-package net.codejava;
+package org.awlabs.dr.project.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

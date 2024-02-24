@@ -1,11 +1,14 @@
-package net.codejava;
+package org.awlabs.dr.project.controller;
 
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.awlabs.dr.project.model.User;
+import org.awlabs.dr.project.repository.UserRepository;
+import org.awlabs.dr.project.service.UserService;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +23,8 @@ public class AppController {
 
     @Autowired
     private UserService userService;
-    public static final Logger LOG = LoggerFactory.getLogger(AppController.class);
+    private static final Logger LOG = LogManager.getLogger("AppController");
+
 
     @GetMapping("")
     public String viewHomePage() {

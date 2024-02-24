@@ -1,4 +1,4 @@
-package net.codejava;
+package org.awlabs.dr.project;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
